@@ -58,36 +58,6 @@ header > nav {
     margin-left: -2.6em;
 }
 
-/* ------------------------------------------- SUBMENU ------------------------------------------- */
-
-/* de subnavigatie links naast de tekst neerzetten d.m.v. float en de breedte op 15% van het scherm */
-body > nav {
-    width: 15%;
-    float: left;
-    margin-top: 0.7em;
-    margin-right: 1.5em;
-    font-size: 0.9em;
-    background-color: #ff3296;
-}
-
-
-body > nav > ul > li {
-    list-style: none;
-    margin-left: -2.7em;
-    padding: 1em;
-}
-
-body > nav > ul > li > a {
-    text-decoration: none;
-    color: #fff;
-}
-
-body > nav > ul > li > a:hover {
-    color: #ccc;
-    text-shadow: 0.1em 0.1em 0.1em #000;
-    transition: all 1s;
-}
-
 /* ------------------------------------------- CONTENT ------------------------------------------- */
 
 body > section {
