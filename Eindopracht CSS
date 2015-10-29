@@ -1,0 +1,541 @@
+/* les 5 */
+
+/* ------------------------------------------- BODY ------------------------------------------- */
+
+body {
+    background: #ffffff;
+    font: normal 100% Palatino;
+    margin: 0 auto;
+    color: #373737;
+    line-height: 1.5em;
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+
+/* ------------------------------------------- HEADER ------------------------------------------- */
+
+/* header = logo + hoofdnavigatie */
+body > header{
+    background-color: black;
+    width: 80em;
+    height: 50em;
+    margin-top: -1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    color:white;
+    margin-left: -2.6em;
+}
+
+header {
+    border-bottom: solid 0.1em #000;
+    margin-top: 1em;
+}
+
+/* menu knoppen en achtergrond kleur */
+header > nav > ul > li {
+    padding: 0.7em;
+    list-style: none;
+    background: GoldenRod;
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    display: inline-flex; /* block-level flex container, een flexibele container. Inline zet het op 1 regel */
+}
+
+/* bij hover en active link wordt de achtergrond kleur lichter */
+header > nav > ul > li:hover, #current {
+    background: DarkOrange;
+    opacity:1;
+}
+
+/* de actieve link wordt wit */
+#current > a {
+    color: #fff;
+}
+
+/* hoofdnavigatie link geen streep en kleur naar wit */
+header > nav > ul > li > a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* hoofdnavigatie hover link wit */
+header > nav > ul > li > a:hover{
+    color: #fff;
+}
+
+/* hoofdnavigatie stuk naar links */
+header > nav {
+    margin-left: -2.6em;
+}
+
+  .to-profile{
+        border:0.2em solid orange;
+        padding:1em;
+        border-radius:5em;
+        width: 75em;
+    }
+
+    .to-profile > a{
+        color: white;
+    }
+    
+    .to-profile > a:hover{
+        color: orange;
+    }
+/* ------------------------------------------- CONTENT ------------------------------------------- */
+
+
+body > section {
+    width:50%;
+    float:left;
+}
+
+article > article > img {
+    border: 0.2em solid #f16723;
+    box-shadow: 0em 0em 0.3em 0.4em #ff3296;
+    border-radius:1em;
+    width: 100%;
+    margin: 1em auto;
+}
+
+h1, p {
+    margin: 1em 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #373737;
+}
+
+a:hover {
+    color: orange;
+}
+
+p > a {
+    font-size: 1.15em;
+}
+
+/* Opleiding */
+section > h1 {
+    margin-top: 0.7em;
+    font-size: 1.4em;
+}
+
+/* Ontwerp opleiding voor IAM */
+section > article > section > h1 {
+    font-size: 1em;
+}
+
+/* CMD Amsterdam, Studieprogramma, Beroepen*/
+section > article > h1 {
+    font-size: 1.2em; 
+}
+
+/* Waar leiden we voor op? */
+section > article > article > h1 {
+    font-size: 1em;
+}
+
+h1 + p {
+    margin: -1em 0 1em;
+}
+
+article > article > ol > li:nth-child(2n) {
+    background: none;
+}
+
+article > article > ol > li {
+    background: #ebebeb;
+    padding: .5em;
+    margin: 0;
+}
+
+button {
+    color:#fff;
+    background-color: #ffb700;
+    padding:1em 1.5em 1em 1.5em;
+    text-decoration: none;
+}
+
+button:hover{
+    background:#f0b51f;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------- FORM ------------------------------------------- */
+
+form {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+legend{
+    margin-top: -0.9em;
+    }
+
+[for="name"]:after, [for="email"]:after {
+    content: "*";
+    color: #000;
+}
+
+section > form > input {
+    width: 90%;
+}
+
+fieldset {
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em currentColor;
+    padding: 1em;
+    border: 0;
+    background-color: #ebebeb;
+    border-bottom-right-radius: 0;
+}
+
+/* Adjacent sibling het eerste element na het element fieldset */
+fieldset + fieldset {
+    margin: 2em 0 0;
+}
+
+legend {
+    padding: 0;
+    font-size: 1.2em;
+    position: absolute;
+}
+
+legend + ol {
+    padding: 2em 0 0;
+    list-style: none;
+}
+
+section > form > fieldset > ol > li {
+    padding: .5em;
+    margin: 0;
+}
+
+textarea{
+    width:100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Vertelt de browser wat de hoogte en breedte qua waarde moet hebben */
+    font-size: 100%;
+    border-radius: .5em;
+    border: .3em solid #737373;
+    margin: .3em 0;
+    padding: 0.1em;
+}
+
+input:hover {
+    border: .3em solid #f16723;
+}
+
+input:focus {
+    border: .3em solid #f16723;
+}
+
+/* ------------------------------------------- ASIDE ------------------------------------------- */
+
+aside {
+    width:25%;
+    float:right;
+    font-size:90%;
+}
+
+aside > h1 {
+    margin-top: .7em;
+}
+
+aside > section > h1 {
+    font-size: 100%;
+}
+
+aside > section > p > span > a {
+    color: #f16723;
+}
+
+aside > section > h1 + h1 {
+    font-size: .8em;
+}
+
+aside > h1:last-of-type {
+    border-top: .05em solid #000;
+    padding-top: .8em;
+}
+
+/* ------------------------------------------- FOOTER ------------------------------------------- */
+
+footer {
+    background: #696969;
+    border-top: solid 0.1em #000;
+    clear: both;
+    width:100%;
+    font-size: 0.75em;
+    display:inline-block;
+    color:white;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+footer > section {
+    float:left;
+    width:18%;
+    margin-left:1em;
+}
+
+footer > section > form > input[type=submit] {
+    background-color: #696969;
+    box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+}
+
+footer > section > ul > li {
+    list-style: none;
+}
+
+footer > section > ul > li > ul > li {
+    list-style: none;
+}
+
+/* ------------------------------------- MEDIA QUERY 1: 55.63 (iPad) ------------------------------------- */
+
+/* Media screen geeft aan dat de gehele pagina meeschaalt aan de hand van de gegeven waarde die in de breedte staat, waardoor de pagina op verschillende viewports 
+zichtbaar is en in verhouding blijft.*/
+
+@media screen and (max-width: 55.63em) {
+
+    body > nav {
+        width: 53em;
+        padding: 1em;
+        margin-left: 0.05em;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+    }
+
+    body > header{
+        background-color: black;
+        width: 55.63em;
+        height: 50em;
+        margin-top: -1em;
+        padding-top: 1em;
+        padding-left: 1em;
+        color:white;
+        margin-left: -1.7em;
+    }
+
+     header > nav > ul > li {
+        color:white;
+        opacity: 0.8;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+         -webkit-transition: opacity .25s ease-in-out;
+    }
+
+     header > nav > ul > li:hover, #current {
+        background: orange;
+        color:white;
+        opacity: 1;
+    }
+
+    .to-profile{
+        border:0.2em solid orange;
+        padding:1em;
+        border-radius:5em;
+        width: 50em;
+    }
+
+    .to-profile > a{
+        color: white;
+    }
+    
+    .to-profile > a:hover{
+        color: orange;
+    }
+
+    legend{
+        margin-top: -0.9em;
+    }
+
+    header > img {
+        width:90%;
+    }
+
+    footer > section {
+        width:95%;
+    }
+
+    body > section {
+        width:54%;
+        float:left;
+    }
+
+     ol{
+    background-color: gray;
+    width: 26em;
+    height: 7.5em;
+    }
+
+    aside {
+        width:40%;
+        float:right;
+        font-size: 1em;
+    }
+
+    button{
+        margin-left: 4em;
+    }
+
+    footer{
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:row;
+        flex-direction:row; 
+        width: 75em;
+        margin-left: -3em;
+        padding: 1em;
+    }
+
+}
+
+/* ------------------------------------- MEDIA QUERY 2: 31.88 (iPhone) ------------------------------------- */
+
+@media screen and (max-width: 31.88em) {
+
+    body{
+        width: 28em;
+        padding: 1em;
+        margin-left: 0.05em;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+    }
+    body > nav {
+        display: flex;
+        width: 100%;
+    }
+
+    body > header{
+        background-color: black;
+        width: 31.88em;
+        height: 50em;
+        margin-top: -3em;
+        padding-top: 1em;
+        color:white;
+        margin-left: -1.1em;
+    }
+
+    .to-profile{
+        border:0.2em solid orange;
+        padding:1em;
+        border-radius:5em;
+        width: 28em;
+    }
+
+    .to-profile > a{
+        color: white;
+    }
+    
+    .to-profile > a:hover{
+        color: orange;
+    }
+
+    header{
+        padding:1em;
+    }
+
+    header > nav > ul > li {
+        display: block;
+        width: 31.88em;
+        color:white;
+        opacity: 0.8;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+         -webkit-transition: opacity .25s ease-in-out;
+    }
+
+    legend{
+    margin-top: -0.9em;
+    }
+
+    /* bij hover en active link wordt de achtergrond kleur lichter */
+    header > nav > ul > li:hover, #current {
+    background: orange;
+    color:white;
+    width: 100%;
+    opacity: 1;
+    }
+
+    body > section {
+        width:90%;
+    }
+    
+    h1{
+        text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    }
+
+    video {
+        width: 100%;
+        min-width: 17em;
+        max-width: 40em;
+    }
+
+    h1 h2 h3 p{
+        width: 30em;
+    }
+    
+     ol{
+    background-color: gray;
+    width: 26em;
+    height: 7.5em;
+    }
+
+    img{
+        width: 90%
+    }
+
+    aside {
+        width:90%;
+        float:none;
+        font-size: 1em;
+    }
+
+    aside > h1:first-of-type {
+    border-top: .05em solid #000;
+    padding-top: .8em;
+    }
+
+    footer{
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:column;
+        flex-direction:column; 
+        background-color: DimGray;
+        width: 43em;
+        margin-top: 0.1em;
+        padding-top: 1em;
+        color:black;
+        margin-left: -1.4em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    footer > a:hover{
+        color: white;
+    }
+
+}
+
