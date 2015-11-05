@@ -16,23 +16,15 @@
         <header>
             <h1>CMD Amsterdam - Intranet</h1>
             <p>Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.</p>
-            <img src="img/CMD-logo.png" alt="">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Opleiding</a></li>
+                    <li><a href="artikel.html">Opleiding</a></li>
                     <li><a href="#">Onderwijsprogramma</a></li>
                     <li><a href="#">Organisatie</a></li>
-                    <li><a href="#">Stages en projecten</a></li>
+                    <li><a href="formulier.html">Stages en projecten</a></li>
                 </ul>
             </nav>
-            <form method="get" action="Formulierpagina.html">
-                <label>
-                    Zoeken
-                    <input type="search" placeholder="Zoek op titel, beschrijving, etc…" name="q">
-                </label>
-                <button type="submit">Zoek!</button>
-            </form>
             <p class="to-profile"><a href="#">Profielpagina Elena Harris</a></p>
         </header>
 
@@ -76,10 +68,10 @@
 
                <fieldset>
                     <legend>Ik wil mij aanmelden</legend>
-                        <label class="showStageForm" for="aanmeldenstage">Als stagebedrijf</label> 
-                         <input class="showStageForm" id="aanmeldenstage" type="radio"  name="stageproject">
-                         <label class="showProjectForm" for="aanmeldenproject">Voor een project</label> 
-                        <input class="showProjectForm" id="aanmeldenproject" type="radio"  name="stageproject"> 
+                        <label class="showStageForm" for="aanmeldenstage">Als stagebedrijf
+                         <input class="showStageForm" id="aanmeldenstage" type="radio"  name="stageproject"></label> 
+                         <label class="showProjectForm" for="aanmeldenproject">Voor een project
+                        <input class="showProjectForm" id="aanmeldenproject" type="radio"  name="stageproject"> </label> 
                  </fieldset>
                 
                 <fieldset id="project" onclick="toggleVisibility('stage');">
@@ -502,8 +494,6 @@
                 <h2>Credits</h2>
                 <p>© 2015 Hogeschool van Amsterdam - Domein Digitale Media en Creatieve Industrie - CMD Amsterdam</p>
             </section>
-
-            <p id="feedback"><a href="#">Geef ons feedback</a></p>
 
         </footer>
 
