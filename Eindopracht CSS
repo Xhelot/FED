@@ -8,11 +8,13 @@ body {
     margin: 0 auto;
     color: #373737;
     line-height: 1.5em;
-    width: 95%;
+    width: 100%;
     margin-left: 3%;
     margin-right: 3%;
     font-size: 1em;
     letter-spacing: 0.1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -21,13 +23,13 @@ body {
 /* header = logo + hoofdnavigatie */
 body > header{
     background-color: black;
-    width: 80em;
-    height: 50em;
+    width: 100%;
+    height: 20em;
     margin-top: -1em;
     padding-top: 1em;
     padding-left: 1em;
     color:white;
-    margin-left: -2.6em;
+    margin-left: -2.3em;
 }
 
 header {
@@ -52,6 +54,7 @@ header > nav > ul > li:hover, #current {
     background: DarkOrange;
     opacity:1;
 }
+
 
 /* de actieve link wordt wit */
 #current > a {
@@ -80,7 +83,7 @@ header > nav {
         border:0.2em solid orange;
         padding:1em;
         border-radius:5em;
-        width: 75em;
+        width: 70%;
     }
 
     .to-profile > a{
@@ -91,7 +94,27 @@ header > nav {
         color: orange;
     }
 /* ------------------------------------------- CONTENT ------------------------------------------- */
+    main{
+    margin: 1em;
+    order: 1;
+    width: 40em;
+    }
 
+    aside{
+        order:2;
+        margin-left: 5em;
+    }
+
+    .related{
+        order:3;
+    }
+    .buttons{
+        order:4;
+    }
+
+    footer{
+        order:5;
+    }
 
 body > section {
     width:50%;
@@ -180,7 +203,7 @@ button:hover{
 form {
     margin-top: 3em;
     margin-bottom: 3em;
-    width: 100%;
+    width: 40em;
 }
 
 legend{
@@ -192,6 +215,8 @@ legend{
     color: #000;
 }
 
+
+
 section > form > input {
     width: 90%;
 }
@@ -199,7 +224,7 @@ section > form > input {
 fieldset {
     border-radius: 1em;
     box-shadow: 0 0 0.2em currentColor;
-    padding: 1em;
+    padding: 2em;
     border: 0;
     background-color: #ebebeb;
     border-bottom-right-radius: 0;
@@ -229,16 +254,10 @@ section > form > fieldset > ol > li {
 textarea{
     width:100%;
 }
-
-input {
-    display: block;
-    width: 100%;
-    box-sizing: border-box; /* Vertelt de browser wat de hoogte en breedte qua waarde moet hebben */
-    font-size: 100%;
-    border-radius: .5em;
-    border: .3em solid #737373;
-    margin: .3em 0;
-    padding: 0.1em;
+label{
+    color:#222;
+    margin:1em;
+    float: left;
 }
 
 input:hover {
@@ -252,9 +271,10 @@ input:focus {
 /* ------------------------------------------- ASIDE ------------------------------------------- */
 
 aside {
-    width:25%;
+    width:20%;
     float:right;
     font-size:90%;
+    margin-right: 10em;
 }
 
 aside > h1 {
@@ -302,6 +322,11 @@ footer > section {
 footer > section > form > input[type=submit] {
     background-color: #696969;
     box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+    width: 10em;
+}
+
+input[type=search]{
+    width: 10em;
 }
 
 footer > section > ul > li {
@@ -312,6 +337,8 @@ footer > section > ul > li > ul > li {
     list-style: none;
 }
 
+
+
 /* ------------------------------------- MEDIA QUERY 1: 55.63 (iPad) ------------------------------------- */
 
 /* Media screen geeft aan dat de gehele pagina meeschaalt aan de hand van de gegeven waarde die in de breedte staat, waardoor de pagina op verschillende viewports 
@@ -319,24 +346,43 @@ zichtbaar is en in verhouding blijft.*/
 
 @media screen and (max-width: 55.63em) {
 
-    body > nav {
-        width: 53em;
-        padding: 1em;
+    body{
+        padding: 0.5em;
         margin-left: 0.05em;
         font-size: 1em;
         letter-spacing: 0.1em;
     }
 
+    body > nav {
+        display:flex;
+    }
+
     body > header{
         background-color: black;
-        width: 55.63em;
-        height: 50em;
+        height: 20em;
+        width: 100%;
         margin-top: -1em;
         padding-top: 1em;
         padding-left: 1em;
         color:white;
-        margin-left: -1.7em;
+        margin-left: -1.0em;
     }
+
+    main{
+        width: 80%;
+    }
+
+form{
+    width: 100%;
+}
+
+button{
+    float:right;
+}
+
+label + button{
+    margin-top: -3.5em;
+}
 
      header > nav > ul > li {
         color:white;
@@ -356,7 +402,7 @@ zichtbaar is en in verhouding blijft.*/
         border:0.2em solid orange;
         padding:1em;
         border-radius:5em;
-        width: 50em;
+        width: 70%;
     }
 
     .to-profile > a{
@@ -414,35 +460,50 @@ zichtbaar is en in verhouding blijft.*/
 
 /* ------------------------------------- MEDIA QUERY 2: 31.88 (iPhone) ------------------------------------- */
 
-@media screen and (max-width: 31.88em) {
+@media screen and (max-width: 25em) {
 
     body{
-        width: 28em;
-        padding: 1em;
+        padding: 0.5em;
         margin-left: 0.05em;
         font-size: 1em;
         letter-spacing: 0.1em;
+        width: 24em;
     }
     body > nav {
         display: flex;
+    }
+
+ main{
         width: 100%;
     }
 
     body > header{
         background-color: black;
-        width: 31.88em;
-        height: 50em;
+        width: 100%;
+        height: 33em;
         margin-top: -3em;
         padding-top: 1em;
         color:white;
         margin-left: -1.1em;
     }
 
+    form{
+        width: 100%
+    }
+
+button{
+    float:right;
+}
+
+label + button{
+    margin-top: -3.5em;
+}
+
     .to-profile{
         border:0.2em solid orange;
         padding:1em;
         border-radius:5em;
-        width: 28em;
+        width: 70%;
     }
 
     .to-profile > a{
@@ -459,7 +520,7 @@ zichtbaar is en in verhouding blijft.*/
 
     header > nav > ul > li {
         display: block;
-        width: 31.88em;
+        width: 100%;
         color:white;
         opacity: 0.8;
         transition: opacity .25s ease-in-out;
@@ -524,7 +585,7 @@ zichtbaar is en in verhouding blijft.*/
         -webkit-flex-direction:column;
         flex-direction:column; 
         background-color: DimGray;
-        width: 43em;
+        width: 100%;
         margin-top: 0.1em;
         padding-top: 1em;
         color:black;
